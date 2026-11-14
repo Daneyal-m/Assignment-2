@@ -19,8 +19,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-app.use('/fontawesome', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
+app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist'))); // Installed Bootstrap from node_modules as static route
+app.use('/fontawesome', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free')));  // Installed Font Awesome packages from node_modules as static route
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
