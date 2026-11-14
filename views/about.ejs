@@ -1,21 +1,21 @@
-<%- include('partials/header') %>
+<%- include('partials/header') %> <%# Include the shared header partial %>
 
-<main class="container my-5">
+<main class="container my-5"> <%# main content wrapper %>
   <section id="About">
     <h2 class="mb-4">About Me</h2>
     
-    <div class="row align-items-center g-4">
-      <div class="col-md-5 text-center">
+    <div class="row align-items-center g-4"> <%# responsive two column Bootstrap grid%>
+      <div class="col-md-5 text-center"> <%# left column: profile photo with fluid scaling and formatting %>
         <img src="/images/me.png" alt="A picture of Mohammed Daneyal Mazher" class="img-fluid rounded shadow">
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7"> <%# Right column: personal information and academic backgroun%>
         <p class="lead">
           I am a student at Ontario Tech University, pursuing a bachelor's degree in Networking and IT security. I have been interested in computers from a very young age and have experience in repairing and assembling computers. This is what intrigued me to learn more about the software aspects of computers. I have worked on websites in the past, and now I am building dynamic web applications using Node.js, Express, and EJS.
         </p>
       </div>
     </div>
 
-    <div class="mt-5 text-center">
+    <div class="mt-5 text-center"> <%# mp4 video intro with thumbnail and controls %>
       <h3 class="mb-3">Video Introduction</h3>
       <video controls poster="/images/intro2.png" class="shadow">
         <source src="/images/intro.mp4" type="video/mp4">
@@ -25,4 +25,4 @@
   </section>
 </main>
 
-<%- include('partials/footer') %>
+<%- include('partials/footer') %> <%# include the shared footer %>
