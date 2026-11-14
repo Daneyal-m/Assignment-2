@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<main class="container my-5 text-center">
+  <section id="Home">
+    <h2 class="mb-4">Welcome to my Portfolio</h2>
+    <img src="/images/welcome.gif" alt="Welcome animation" class="img-fluid rounded shadow-sm">
+  </section>
+</main>
+
+<%- include('partials/footer') %>
